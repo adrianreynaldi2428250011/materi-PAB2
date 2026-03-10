@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart'; 
-import 'package:pilem2/screens/home_screen.dart'; 
-import 'package:pilem2/screens/search_screen.dart'; 
-import 'package:pilem2/screens/favorite_screen.dart'; 
+import 'package:pilem/screens/home_screen.dart'; 
+import 'package:pilem/screens/search_screen.dart'; 
+import 'package:pilem/screens/favorite_screen.dart'; 
  
 void main() => runApp(const MyApp()); 
  
@@ -43,7 +43,7 @@ class MainScreenState extends State<MainScreen> {
       _selectedIndex = index; 
     }); 
   } 
- 
+
   @override 
   Widget build(BuildContext context) { 
     return Scaffold( 
@@ -61,11 +61,11 @@ class MainScreenState extends State<MainScreen> {
             label: 'Search', 
           ), 
           BottomNavigationBarItem( 
-            icon: Icon(Icons.favorite), 
+            icon: Icon(Icons.favorite),
             label: 'Favorite', 
           ), 
         ], 
       ), 
     ); 
   } 
-} 
+}
